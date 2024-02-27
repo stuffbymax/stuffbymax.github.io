@@ -153,6 +153,54 @@
             font-size: 1.2rem;
             color: #cccccc;
         }
+        .center {
+  text-align: center;
+  border: 3px;
+}
+#contact-form { 
+  width: 500px; 
+  margin: 50px auto; 
+} 
+ 
+.form-group { 
+  margin-bottom: 25px; 
+} 
+ 
+label, 
+input, 
+textarea { 
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 3px; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  font-size: 16px; 
+  margin-bottom: 10px; 
+} 
+ 
+input[type="text"], 
+input[type="email"] { 
+  height: 45px; 
+} 
+ 
+textarea { 
+  height: 150px; 
+} 
+ 
+button[type="submit"] { 
+  width: 100%; 
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 14px 20px; 
+  margin-top: 10px; 
+  border: none; 
+  border-radius: 3px; 
+  cursor: pointer; 
+} 
+ 
+button[type="submit"]:hover { 
+  background-color: #3e8e41; 
+} 
     </style>
 </head>
 <body>
@@ -165,8 +213,38 @@
     </header>
     <div class="container">
         <section class="contact">
-            <h2 class="section-heading">Contact Information</h2>
+            <div class="center">
+            <h2 class="section-heading" >form</h2>
+            </div>
+            <form id="contact_form" method="post"> 
+                <div class="form-group"> 
+                  <label for="name">Name:</label> 
+                  <input type="text" class="form-control" id="name" name="name" required> 
+                </div> 
+                <div class="form-group"> 
+                  <label for="email">Email:</label> 
+                  <input type="email" class="form-control" id="email" name="email" required> 
+                </div> 
+                <div class="form-group"> 
+                  <label for="message">Message:</label> 
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea> 
+                </div> 
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button> 
+              </form> 
+
+
+        </div>
+<br>
+<div class="container">
+    <section class="contact">
+        <div class="center">
+        <h2 class="section-heading">Contact Information</h2>
+
+</div>
+            <div class="center">
             <p>you can contact me via instagram but i dont realy use it</p>
+        </div>
+
             <ul class="social-links">
             <a href="https://www.instagram.com/djmaxcz/"target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/012/493/083/original/instagram-logo-3d-illustration-free-png.png" alt="insta logo" width="100" height="100"></a>
             </ul><br>

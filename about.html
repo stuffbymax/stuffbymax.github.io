@@ -31,14 +31,18 @@
             
   background-color: #ff9900;
 }
+        .center {
+  text-align: center;
+  border: 3px;
+}
 </style>
 
 <nav>
   <ul class="topnav">
     <a href="index.html">Home</a>
     <a href="projects.html">projects</a>
-    <a class="active" href="contact.html">Contact</a>
-    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="active" href="about.html">About</a>
   </ul>
 </nav>
 <style>
@@ -153,51 +157,6 @@
             font-size: 1.2rem;
             color: #cccccc;
         }
-        .center {
-  text-align: center;
-  border: 3px;
-}
-#contact-form { 
-  width: 500px; 
-  margin: 50px auto; 
-} 
- 
-.form-group { 
-  margin-bottom: 25px; 
-} 
- 
-label, 
-input, 
-textarea { 
-  width: 100%; 
-  padding: 12px; 
-  border-radius: 3px; 
-  border: 1px solid #ccc; 
-  box-sizing: border-box; 
-  font-size: 16px; 
-  margin-bottom: 10px; 
-} 
- 
-input[type="text"], 
-input[type="email"] { 
-  height: 45px; 
-} 
- 
-textarea { 
-  height: 150px; 
-} 
- 
-button[type="submit"] { 
-  width: 100%; 
-  background-color:  #ff9900;
-  color: white; 
-  padding: 14px 20px; 
-  margin-top: 10px; 
-  border: none; 
-  border-radius: 3px; 
-  cursor: pointer; 
-}  
-
     </style>
 </head>
 <body>
@@ -208,46 +167,56 @@ button[type="submit"] {
         <h1>stuffbymax</h1>
         <p>Welcome to my world of game development!</p>
     </header>
+    <section>
+        <div class="container">
+            <div class="center">
+      <h2 class=section-heading>about me</h2>
+      </div>
+      <p>hello my name is max i am from czech republic and i am 16 years old and i do stuff in internet</p>
+      <p>also i help traslate GDevelop to czech language</p>
+</section>
+<div class="container">
+        <section class="resume">
+            <div class="center">
+            <h2 class="section-heading">Resume</h2>
+            <p>My skills, experience, and education.</p>
+            <h3 style="color: #ff9900;">Skills</h3>
+            <ul>
+                <h3>Bash</h3>
+                <h3>GDevelop</h3>
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>Python (basic)</h3>
+            </ul>
+            <h2 style="color: #ff9900;">Experience</h2>
+            <ul>
+                <h2>No professional experience yet.</h2>
+            </ul>
+            <h2 style="color: #ff9900;">Education</h2>
+            <ul>
+                <h2>calderdale college</h2>
+            </ul>
+        </section>
+    </section>
+</header>
+<style>
+h1 {text-align: center; }
+</style>
+<section class="map">
     <div class="container">
+        <h3 style="color: #ff9900;">___________________________________________________________________________________</h3>
+<h1 class="section heading" style="color: #ff9900;">were i am living</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40242.285605295474!2d-1.8890389019599436!3d53.73979385344128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bc201a120ef39%3A0x6c3f29996afa5893!2sHalifax!5e0!3m2!1sen!2suk!4v1708971208722!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+</div> 
+<div class="container">
+    <div class="center">
         <section class="contact">
             <div class="center">
-            <h2 class="section-heading" >form</h2>
-            </div>
-            <form method="post" action=<"?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?">
-            <form id="contact_form" method="post"> 
-                <div class="form-group"> 
-                  <label for="name">Name:</label> 
-                  <input type="text" class="form-control" id="name" name="name" required> 
-                </div> 
-                <div class="form-group"> 
-                  <label for="email">Email:</label> 
-                  <input type="email" class="form-control" id="email" name="email" required> 
-                </div> 
-                <div class="form-group"> 
-                  <label for="message">Message:</label> 
-                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea> 
-                </div> 
-                <button color type="submit" class="btn btn-primary" id="submit" >Submit</button> 
-              </form> 
-
-
+            <h2 class="section-heading">social media</h2>
         </div>
-<br>
-<div class="container">
-    <section class="contact">
-        <div class="center">
-        <h2 class="section-heading">Contact Information</h2>
-
-</div>
-            <div class="center">
-            <p>you can contact me via instagram but i dont realy use it</p>
-        </div>
-        <div class="center">
             <ul class="social-links">
-            <a href="https://www.instagram.com/djmaxcz/"target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/012/493/083/original/instagram-logo-3d-illustration-free-png.png" alt="insta logo" width="100" height="100"></a>
-            </ul><br>
-            <ul class="social-links">
-                <a href="https://www.youtube.com/channel/UCPImH2euMdVLB0WD3w1GDtw"target="_blank"><img src="https://th.bing.com/th/id/R.94a67bc652e2c46a1f9294ab5165db3e?rik=743uMBzo4Hxi2A&pid=ImgRaw&r=0" alt="YouTube Logo" width="30" height="30"></a>
+                <a href="https://www.youtube.com/channel/UCPImH2euMdVLB0WD3w1GDtw"target="_blank"><img src="https://th.bing.com/th/id/R.94a67bc652e2c46a1f9294ab5165db3e?rik=743uMBzo4Hxi2A&pid=ImgRaw&r=0"  alt="YouTube Logo" width="30" height="30"></a>
                 <a href="https://github.com/justmaxcz"target="_blank"><img src="https://th.bing.com/th/id/OIP.eoZPB2gfGH-1ckaL_JSZdwAAAA?rs=1&pid=ImgDetMain" alt="GitHub Logo" width="30" height="30"></a>
                 <a href="https://stuff-by-max.itch.io/"target="_blank"><img src="https://th.bing.com/th/id/R.d953f195c30d321ac0f53b5fd7e2f19a?rik=8UXZc8Bt%2fGTqTw&pid=ImgRaw&r=0" alt="itch.io logo"width="30" height="30"></a>
             </ul><br>

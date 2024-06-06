@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff; /* Changed text color to white */
+            padding-bottom: 60px; /* Adjusted padding to make space for the footer */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 9px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            filter: brightness(110%);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 40px rgb(255, 255, 255);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 9px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the footer appears above other elements */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        .container2 {
+            
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border: solid 2px #00a1c9;
+            
+        }
+        
+
+
+        /* About Me Styles */
+        .about-me {
+           
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+            text-align: center; /* Center the text */
+        }
+
+        .about-me h2 {
+            margin-top: 0;
+        }
+
+        .about-me p {
+            color: rgb(231, 231, 231);
+        }
+
+        /* Logo Styles */
+        .logo img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            transition: transform 0.3s, filter 0.3s;
+            box-shadow: 0px 0px 37px rgba(28, 148, 4, 0.89);
+            border-radius: 50%;
+        }
+
+        .logo img:hover {
+            transform: scale(1.2);
+            filter: brightness(110%);
+            box-shadow: 0px 0px 40px rgb(0, 189, 31);
+        }
+        
+        #background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+@media (max-width: 750px) {
+   #background-video {
+      display: none;
+   } 
+   body {
+      background: url("./videos/47802-451812879_small.mp4") no-repeat;
+      background-size: cover;
+   }
+}
+
+    </style>
+</head>
+<body>
+<header>
+
+        <h1>HOME</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="units.html">Units</a></li>
+    </ul>
+</nav>
+<video id="background-video" autoplay loop muted poster="./videos/47802-451812879_small.mp4">
+    <source src="./videos/47802-451812879_small.mp4" type="video/mp4">
+  </video>
+<br>
+<br>
+<div class="container">
+    <div class="container2">
+        <div class="logo">
+            <img src="./logo/96355058.jpg" alt="me.icon">
+            
+        </div>
+        
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is where I showcase my work and talents.</p>
+    <p>Feel free to explore!</p>
+    
+    </div>
+    <br>
+    <br>
+    <section class="about-me">
+        <div class="container2">
+        <h2>About Me</h2>
+        <h4>Hello! My name is Martin Petik. i live in Halifax, United Kingdome. I have a keen interest in programing, website making, translating projects.
+             and me hobbies are ricing my desktop, watch movies/films, make games, running, playng games.</h4>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Martin petik. MIT License. this webste is hosted on github</p>
+</footer>
+
+</body>
+</html>

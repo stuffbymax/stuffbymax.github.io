@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume / CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+            padding-bottom: 60px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 9px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            filter: brightness(110%);
+            transform: scale(1.1);
+            box-shadow: 0px 0px
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 9px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the footer appears above other elements */
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills-list li {
+            margin: 10px;
+            text-align: center;
+        }
+        .skills-list img {
+            display: block;
+            margin: 0 auto 5px;
+        }
+        .button {
+            text-align: center;
+            max-width: 250px;
+            margin: 10px auto 10px;
+            background-color: rgba(255, 0, 0, 0.9);
+            transition: transform 0.3s, filter 0.3s;
+            box-shadow: 0px 0px 37px rgba(255, 0, 0, 0.767);
+            border-radius: 1%;
+           
+            
+        }
+        .button:hover {
+            transform: scale(1.2);
+            filter: brightness(110%);
+            box-shadow: 0px 0px 40px rgb(255, 0, 0);
+        }
+        a:link {
+  color: rgb(255, 255, 255);
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Resume / CV</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="units.html">Units</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h2>Personal Information</h2>
+        <p>Name: Martin Petik</p>
+        <p>Email: heroesbiggie@gmail.com</p>
+        <p>Phone: Non</p>
+        <p>Address: United Kingdom, Halifax</p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>College: Calderdale College, T Level Transition Programme Digital 2023-2024</li>
+            <li>High School: The Whitley AP Academy, Year: 2019-2023</li>
+            <li>High School: Trinity Academy Grammar, Year: 2018-2019</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Interests</h2>
+        <p>Building Desktops, Installing Linux/GNU+Linux, Making Websites, Programming.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li>Like Albert Einstein said, "Experience is relative."</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>My Skills</h2>
+        <div class="section">
+            <h3>Technical/Programming Skills</h3>
+            <ul class="skills-list">
+                <li><img src="./icons/html.jpg" alt="HTML5 Icon" height="20">HTML5</li>
+                <li><img src="./icons/CSS.jpg" alt="CSS3 Icon" height="40">CSS</li>
+                <li><img src="./icons/javas.png" alt="JavaScript Icon" height="40">JavaScript</li>
+                <li><img src="./icons/bash.png" alt="Bash Icon" height="40">Bash</li>
+                <li><img src="./icons/python.jpg" alt="Python Icon" height="40">Python</li>
+                <li><img src="./icons/nvim.jpeg" alt="Neovim Icon" height="40">Neovim</li>
+                <li><img src="./icons/vim.jpeg" alt="Vim Icon" height="30">Vim</li>
+                <li><img src="./icons/vscode.jpeg" alt="VSCode Icon" height="30">VSCode</li>
+                <li><img src="./icons/vscodium.png" alt="VSCodium Icon" height="30">VSCodium</li>
+                <li><img src="./icons/Gnu-nano.png" alt="GNU Nano Icon" height="50">GNU Nano</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Design Skills</h3>
+            <ul class="skills-list">
+                <li><img src="./icons/adobe apps.jpg" alt="Adobe Apps Icon" height="70">Adobe Apps</li>
+                <li><img src="./icons/krita.jpg" alt="Krita Icon" height="50">Krita</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Tools</h3>
+            <ul class="skills-list">
+                <li><img src="./icons/linux.jpg" alt="Linux Icon" height="50">Linux</li>
+                <li><img src="./icons/debian.jpeg" alt="Debian Icon" height="50">Debian</li>
+                <li><img src="./icons/git.jpeg" alt="Git Icon" height="50">Git</li>
+                <li><img src="./icons/archlinux.jpeg" alt="Arch Linux Icon" height="50">Arch Linux</li>
+                <li><img src="./icons/Xfce_logo.png" alt="XFCE4 Icon" height="50">XFCE4</li>
+                <li><img src="./icons/termux.png" alt="Termux Icon" height="50">Termux</li>
+            </ul>
+        </div>
+        <div class="button">
+        <a href="./cv/cv.zip">
+        <h1>download</h1></a>
+            </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Martin petik. MIT License. this webste is hosted on github</p>
+</footer>
+
+</body>
+</html>

@@ -79,18 +79,8 @@
             
         }
 
-        .container2 {
-            
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-            border: solid 2px #00a1c9;
-            
-        }
+   
         
-
-
         /* About Me Styles */
         .about-me {
            
@@ -99,15 +89,15 @@
             margin-bottom: 30px;
             text-align: left;
             text-align: center; /* Center the text */
+             color: rgb(255, 255, 255);
         }
 
         .about-me h2 {
             margin-top: 0;
+            color: rgb(255, 255, 255);
         }
 
-        .about-me p {
-            color: rgb(231, 231, 231);
-        }
+   
 
         /* Logo Styles */
         .logo img {
@@ -115,7 +105,7 @@
             height: auto;
             margin-right: 10px;
             transition: transform 0.3s, filter 0.3s;
-            box-shadow: 0px 0px 37px rgba(28, 148, 4, 0.89);
+            box-shadow: 0px 0px 37px rgb(35, 212, 0);
             border-radius: 50%;
         }
 
@@ -146,6 +136,24 @@
    }
 }
 
+.blackbox {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Center the text */
+    box-shadow: 0 0 5px #000;
+}
+
+.shadowfilter{
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
     </style>
 </head>
 <body>
@@ -170,29 +178,25 @@
 <br>
 <br>
 <div class="container">
-    <div class="container2">
+    <div class="blackbox">
         <div class="logo">
+            <a href="about.html">
             <img src="./logo/96355058.jpg" alt="me.icon">
-            
+        </a> 
         </div>
         
     <h1>Welcome to My Portfolio</h1>
     <p>This is where I showcase my work and talents.</p>
     <p>Feel free to explore!</p>
-    
-    </div>
     <br>
-    <br>
-    <section class="about-me">
-        <div class="container2">
-        <h2>About Me</h2>
-        <h4>Hello! My name is Martin Petik. i live in Halifax, United Kingdome. I have a keen interest in programing, website making, translating projects.
-             and me hobbies are ricing my desktop, watch movies/films, make games, running, playng games.</h4>
-    </section>
+
+
+</div>
 </div>
 
 <footer>
     <p>&copy; 2024 Martin petik. MIT License. this webste is hosted on github</p>
+    
 </footer>
 
 </body>

@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
+<style>
+
+body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -126,15 +122,7 @@
    bottom: 0;
    z-index: -1;
 }
-@media (max-width: 750px) {
-   #background-video {
-      display: none;
-   } 
-   body {
-      background: url("./videos/47802-451812879_small.mp4") no-repeat;
-      background-size: cover;
-   }
-}
+
 
 .blackbox {
     background: rgb(0, 0, 0);
@@ -152,6 +140,28 @@
   margin-right: auto;
   width: 100%;
 }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 
 
     </style>
@@ -173,32 +183,52 @@
         <li><a href="gallery.html">gallery</a></li>
     </ul>
 </nav>
-<video id="background-video" autoplay loop muted poster="./videos/47802-451812879_small.mp4">
-    <source src="./videos/47802-451812879_small.mp4" type="video/mp4">
-  </video>
-<br>
-<br>
-<div class="container">
-    <div class="blackbox">
-        <div class="logo">
-            <a href="about.html">
-            <img src="./logo/96355058.jpg" alt="me.icon">
-        </a> 
-        </div>
-        
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is where I showcase my work and talents.</p>
-    <p>Feel free to explore!</p>
-    <br>
 
 
+<div class="gallery">
+  <a target="_blank" href="./units-pictures/unit 1-2/unit 1 online world.png">
+    <img src="./units-pictures/unit 1-2/unit 1 online world.png" alt="unit1" width="600" height="400">
+  </a>
+  <div class="desc">unit 1</div>
 </div>
+
+<div class="gallery">
+  <a target="_blank" href="./units-pictures/unit 1-2/unit 2 technology system.png">
+    <img src="./units-pictures/unit 1-2/unit 2 technology system.png" alt="unit2" width="600" height="400">
+  </a>
+  <div class="desc">unit 2</div>
 </div>
+
+<div class="gallery">
+  <a target="_blank" href="units-pictures/unit 6/unit 6.png">
+    <img src="units-pictures/unit 6/unit 6.png" alt="unit6" width="600" height="400">
+  </a>
+  <div class="desc">unit 6</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./units-pictures/unit 13-3/unit 13.png">
+    <img src="./units-pictures/unit 13-3/unit 13.png" alt="unit13" width="600" height="400">
+  </a>
+  <div class="desc">unit 13</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="./units-pictures/unit 13-3/unit3/unit 3.png">
+      <img src="./units-pictures/unit 13-3/unit3/unit 3.png" alt="unit3" width="600" height="400">
+    </a>
+    <div class="desc">unit 3</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="./units-pictures/unit 22/unit 22.png">
+      <img src="./units-pictures/unit 22/unit 22.png" alt="unit22" width="600" height="400">
+    </a>
+    <div class="desc">unit 22</div>
+  </div>
 
 <footer>
-    <p>&copy; 2024 Martin petik. MIT License. this webste is hosted on a github</p>
-    
+    <p>&copy; 2024 Martin petik. MIT License. this webste is hosted on github</p>
 </footer>
-
 </body>
 </html>

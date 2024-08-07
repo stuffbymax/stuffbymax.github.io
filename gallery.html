@@ -182,6 +182,56 @@ div.desc {
             filter: brightness(110%);
         }
 
+        .blackbox {
+            background: rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center; /* Center the text */
+            box-shadow: 0 0 5px #000;
+        }
+
+        .shadowfilter {
+            text-align: center;
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        /* Burger Menu Styles */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2000; /* Ensure the burger menu appears above other elements */
+        }
+
+        .menu-toggle .burger {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+        }
 
 
     </style>
@@ -193,15 +243,20 @@ div.desc {
 </header>
 
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="units.html">Units</a></li>
-        <li><a href="gallery.html">gallery</a></li>
-    </ul>
+  <div class="menu-toggle">
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+  </div>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="units.html">Units</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+  </ul>
 </nav>
 
 
@@ -259,6 +314,16 @@ div.desc {
             <img src="./icons/github-mark-c791e9551fe4/github-mark/github-mark-white.png" alt="GitHub" width="30" height="30">
     </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+          menu.classList.toggle('show');
+      });
+  });
+</script>
 
 </body>
 </html>

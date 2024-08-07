@@ -166,6 +166,11 @@
 </header>
 
 <nav>
+    <div class="menu-toggle">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+    </div>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -173,8 +178,7 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="units.html">Units</a></li>
-        <li><a href="gallery.html">gallery</a></li>
-
+        <li><a href="gallery.html">Gallery</a></li>
     </ul>
 </nav>
 
@@ -326,6 +330,16 @@
             <img src="./icons/github-mark-c791e9551fe4/github-mark/github-mark-white.png" alt="GitHub" width="30" height="30">
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('show');
+        });
+    });
+</script>
 
 </body>
 </html>

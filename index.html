@@ -25,6 +25,7 @@
             color: #fff;
             padding: 9px 0;
             text-align: center;
+            position: relative;
         }
         nav ul {
             list-style-type: none;
@@ -53,43 +54,31 @@
             transform: scale(1.1);
             box-shadow: 0px 0px 40px rgb(255, 255, 255);
         }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 9px 0;
+            padding: 15px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
-            z-index: 1000; /* Ensure the footer appears above other elements */
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
+            z-index: 1000;
         }
 
-        /* Container Styles */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
-            
         }
 
-   
-        
-        /* About Me Styles */
         .about-me {
-           
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 30px;
-            text-align: left;
             text-align: center; /* Center the text */
-             color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
         }
 
         .about-me h2 {
@@ -97,9 +86,6 @@
             color: rgb(255, 255, 255);
         }
 
-   
-
-        /* Logo Styles */
         .logo img {
             width: 100px;
             height: auto;
@@ -113,17 +99,6 @@
             transform: scale(1.2);
             filter: brightness(110%);
             box-shadow: 0px 0px 40px rgb(0, 189, 31);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            z-index: 1000;
         }
 
         .social-media {
@@ -145,56 +120,92 @@
             transform: scale(1.2);
             filter: brightness(110%);
         }
-        
-        
+
         #background-video {
-   width: 100vw;
-   height: 100vh;
-   object-fit: cover;
-   position: fixed;
-   left: 0;
-   right: 0;
-   top: 0;
-   bottom: 0;
-   z-index: -1;
-}
-@media (max-width: 750px) {
-   #background-video {
-      display: none;
-   } 
-   body {
-      background: url("./videos/47802-451812879_small.mp4") no-repeat;
-      background-size: cover;
-   }
-}
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
 
-.blackbox {
-    background: rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center; /* Center the text */
-    box-shadow: 0 0 5px #000;
-}
+        @media (max-width: 750px) {
+            
+            body {
+                background: url("./videos/47802-451812879_small.mp4") no-repeat;
+                background-size: cover;
+            }
+        }
 
-.shadowfilter{
-  text-align: center;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
+        .blackbox {
+            background: rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center; /* Center the text */
+            box-shadow: 0 0 5px #000;
+        }
 
+        .shadowfilter {
+            text-align: center;
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
 
+        /* Burger Menu Styles */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2000; /* Ensure the burger menu appears above other elements */
+        }
+
+        .menu-toggle .burger {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
 <header>
-
-        <h1>HOME</h1>
+    <h1>HOME</h1>
 </header>
 
 <nav>
+    <div class="menu-toggle">
+        <div class="burger"></div>
+        <br>
+        <div class="burger"></div>
+        <br>
+        <div class="burger"></div>
+    </div>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -202,29 +213,29 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="units.html">Units</a></li>
-        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
     </ul>
 </nav>
+
 <video id="background-video" autoplay loop muted poster="./videos/47802-451812879_small.mp4">
     <source src="./videos/47802-451812879_small.mp4" type="video/mp4">
-  </video>
-<br>
-<br>
+</video>
+
+<br><br>
+
 <div class="container">
     <div class="blackbox">
         <div class="logo">
             <a href="about.html">
-            <img src="./logo/96355058.jpg" alt="me.icon">
-        </a> 
+                <img src="./logo/96355058.jpg" alt="me.icon">
+            </a> 
         </div>
         
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is where I showcase my work and talents.</p>
-    <p>Feel free to explore!</p>
-    <br>
-
-
-</div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is where I showcase my work and talents.</p>
+        <p>Feel free to explore!</p>
+        <br>
+    </div>
 </div>
 
 <footer>
@@ -233,13 +244,22 @@
         <a href="https://mastodon.social/@stuffbymax" target="_blank">
             <img src="./icons/Mastodon_Logotype_(Simple).svg.png" alt="Mastodon" width="30" height="30">
         </a>
-      
- 
- <a href="https://github.com/stuffbymax" target="_blank">
+        <a href="https://github.com/stuffbymax" target="_blank">
             <img src="./icons/github-mark-c791e9551fe4/github-mark/github-mark-white.png" alt="GitHub" width="30" height="30">
+        </a>
     </div>
 </footer>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('show');
+        });
+    });
+</script>
 
 </body>
 </html>

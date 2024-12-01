@@ -6,7 +6,7 @@ title = 'Welcome'
 ---
 # Welcome to My Website!
 
-Hi there! I'm **[Your Name]**, a [Your Profession/Role]. This website is where I share my projects, experiences, and how you can reach me.
+Hi there! I'm **Martin P/Stuff By max**, a bad developer great at History. This website is where I share my projects, experiences, and how you can reach me.
 
 Feel free to explore:
 - [About Me](/about/)

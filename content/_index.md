@@ -5,6 +5,7 @@ title = 'Welcome'
 +++
 ---
 # Welcome to My Website!
+Happy New Year! 🎉 Wishing you a year filled with joy, success, and wonderful moments
 
 Hi there! I'm **Martin P/Stuff By max**, a bad developer great at History. This website is where I share my projects, experiences, and how you can reach me.
 

@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Welcome on </title>
-    <link>http://localhost:34385/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Welcome on </description>
-    <generator>Hugo -- 0.139.3</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 Nov 2024 23:03:30 +0000</lastBuildDate>
-    <atom:link href="http://localhost:34385/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>projects</title>
-      <link>http://localhost:34385/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Fri, 29 Nov 2024 23:03:30 +0000</pubDate>
-      <guid>http://localhost:34385/projects/</guid>
-      <description>&lt;h1 id=&#34;personal-projects&#34;&gt;Personal Projects&lt;/h1&gt;
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h2 id=&#34;all-my-projects-can-be-found-on-github&#34;&gt;All my projects can be found on GitHub.&lt;/h2&gt;
+&lt;h2 id=&#34;githubhttpsgithubcomstuffbymax&#34;&gt;&lt;a href=&#34;https://github.com/stuffbymax&#34;&gt;github&lt;/a&gt;&lt;/h2&gt;
+&lt;h1 id=&#34;personal-projects&#34;&gt;Personal Projects&lt;/h1&gt;
 &lt;h2 id=&#34;bash-pac&#34;&gt;bash-pac&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;bash-pac&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:34385/images/project-images/bash-pac.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;bash-pac&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/project-images/bash-pac.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/stuffbymax/bash-pac&#34;&gt;Link to Project&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;Pac-Man and Snake-inspired game.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;zdislave-welcome-to-castle&#34;&gt;Zdislave Welcome to Castle&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Zdislave Welcome to Castle&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:34385/images/project-images/jK9v43.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Zdislave Welcome to Castle&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/project-images/jK9v43.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://stuff-by-max.itch.io/&#34;&gt;Link to Project&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;Doom and Wolfenstein-like game.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;black-and-white&#34;&gt;Black and White&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Black and White&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:34385/images/project-images//black-white.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Black and White&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/project-images//black-white.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://itch.io/e/11275490/stuff-by-max-updated-black-and-white&#34;&gt;Link to Project&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;A simple platformer.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;a-virus&#34;&gt;A Virus&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;A Virus&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:34385/images/project-images/the-virus.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;A Virus&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/project-images/the-virus.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://itch.io/event/20215678&#34;&gt;Link to Project&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;A virus simulation inspired by &amp;ldquo;you are an idiot&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h1&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;sysi-system-information&#34;&gt;sysi (System Information)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;sysi&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:34385/images/project-images/sysi-icon.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/stuffbymax/&#34;&gt;Link to Project&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Displays system information in your terminal.&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;sysi&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/project-images/sysi-icon.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact Me</title>
-      <link>http://localhost:34385/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Fri, 29 Nov 2024 23:02:41 +0000</pubDate>
-      <guid>http://localhost:34385/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d love to hear from you! Feel free to reach out via the following channels:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Location:&lt;/strong&gt; Halifax, United Kingdom&lt;/li&gt;
@@ -58,9 +58,9 @@ Whether it&amp;rsquo;s about a project, collaboration, or just to say hello, I&a
     </item>
     <item>
       <title>about</title>
-      <link>http://localhost:34385/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 29 Nov 2024 23:01:52 +0000</pubDate>
-      <guid>http://localhost:34385/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;hello&#34;&gt;Hello!&lt;/h2&gt;
 &lt;p&gt;My name is &lt;strong&gt;Martin Petik&lt;/strong&gt;, and I live in Halifax, United Kingdom. I have a deep passion for programming, website development, and working on translation projects. In my spare time, I love customizing my desktop environment, watching films, creating games, running, and indulging in video games.&lt;/p&gt;
 &lt;p&gt;I am a driven individual with a strong interest in computer systems, Linux installations, cybersecurity, and programming. Currently, I am studying &lt;strong&gt;Digital Support Services&lt;/strong&gt;, focusing on network security and technical tools. I am known for my problem-solving abilities, creativity, and hands-on approach. I&amp;rsquo;m excited to apply my skills to real-world projects and collaborate with tech-driven teams.&lt;/p&gt;</description>

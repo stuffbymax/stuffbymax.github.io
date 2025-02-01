@@ -4,6 +4,9 @@ draft = false
 url = '/projects/'
 title = 'projects'
 +++
+
+## All my projects can be found on GitHub.
+## [github](https://github.com/stuffbymax)
 # Personal Projects
 
 ## bash-pac

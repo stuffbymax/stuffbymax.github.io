@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://stuffbymax.me/projects/</loc>
     <lastmod>2024-11-29T23:03:30+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://stuffbymax.me/contact/</loc>
     <lastmod>2024-11-29T23:02:41+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://stuffbymax.me/about/</loc>
     <lastmod>2024-11-29T23:01:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://stuffbymax.me/</loc>
     <lastmod>2024-11-29T23:00:07+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://stuffbymax.me/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://stuffbymax.me/tags/</loc>
   </url>
 </urlset>

@@ -6,7 +6,9 @@ title = 'projects'
 +++
 
 ## All my projects can be found on GitHub.
+
 ## [github](https://github.com/stuffbymax)
+
 # Personal Projects
 
 ## bash-pac
@@ -70,5 +72,12 @@ title = 'projects'
 
 **[Link to Project](https://stuffbymax.github.io/CheatsHub/)**  
 *A website for game cheats.*
+
+## space-rover
+![space-rover](/images/project-images/space-rover.png)
+
+**[Link to Project](https://stuffbymax.me/space-rover/)**  
+*A website for tracking inventions and space projects.*
+
 
 ---

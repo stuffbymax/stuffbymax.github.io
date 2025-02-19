@@ -79,5 +79,12 @@ title = 'projects'
 **[Link to Project](https://stuffbymax.me/space-rover/)**  
 *A website for tracking inventions and space projects.*
 
+## wiki-blogs
+![wiki-blogs](/images/project-images/wiki-blogs.jpg)
+
+**[Link to Project](https://stuffbymax.me/space-rover/)**  
+*A website for tracking inventions and space projects.*
+
+
 
 ---

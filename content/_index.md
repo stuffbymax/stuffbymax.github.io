@@ -15,4 +15,17 @@ Feel free to explore:
 - [Contact Me](/contact/)
 - [My CV](https://stuffbymax.me/cv/)
 
-Let's connect and create something amazing!
+## Links to Sites
+[nano Cheat sheet](https://stuffbymax.me/nano-cheat-sheet/)
+
+[gamehub](https://stuffbymax.me/gamehub/)
+
+[gamesave](https://stuffbymax.me/gamesave/ ) 
+
+[wiki-blogs](https://stuffbymax.me/wiki-blogs/)
+
+[game Region Codes for Consoles](https://github.com/stuffbymax/Game-Region-Codes)
+
+[tic tac toe test AI test](https://github.com/stuffbymax/tic-tac-toe-test)
+
+[cv](https://stuffbymax.me/cv/)

@@ -15,7 +15,19 @@ Feel free to explore:
 - [Contact Me](/contact/)
 - [My CV](https://stuffbymax.me/cv/)
 
+
+## All Projects
+
+[Github](https://github.com/stuffbymax)
+
 ## Links to Sites
+
+[Pixel](https://stuffbymax.me/pixel/)
+
+[ps3 share](https://stuffbymax.me/ps3-share/)
+
+[game Regions Codes](https://stuffbymax.me/Game-Region-Codes/)
+
 [nano Cheat sheet](https://stuffbymax.me/nano-cheat-sheet/)
 
 [gamehub](https://stuffbymax.me/gamehub/)

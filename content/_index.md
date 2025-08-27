@@ -9,6 +9,13 @@ Happy New Year! 🎉 Wishing you a year filled with joy, success, and wonderful 
 
 Hi there! I'm **Martin P/Stuff By max**, a bad developer great at History. This website is where I share my projects, experiences, and how you can reach me.
 
+
+I want to give you a quick heads-up about the games I’ll be releasing in the future. Google is planning to block apps from unverified developers, which may trigger warnings or prevent installation on some devices.
+
+As an independent developer who values freedom and privacy, I’ve chosen not to go through Google’s verification process. This means my games might show warnings, but they are completely safe to install and play.
+
+I’m committed to keeping my games accessible, free, and respectful of your privacy.
+
 Feel free to explore:
 - [About Me](/about/)
 - [My Projects](/projects/)

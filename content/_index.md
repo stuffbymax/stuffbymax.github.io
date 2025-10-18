@@ -20,7 +20,7 @@ Feel free to explore:
 - [About Me](/about/)
 - [My Projects](/projects/)
 - [Contact Me](/contact/)
-- [My CV](https://stuffbymax.me/cv/)
+- [My CV](https://stuffbymax.github.io/cv/)
 
 
 ## All Projects
@@ -29,22 +29,22 @@ Feel free to explore:
 
 ## Links to Sites
 
-[Pixel](https://stuffbymax.me/pixel/)
+[Pixel](https://stuffbymax.github.io/pixel/)
 
-[ps3 share](https://stuffbymax.me/ps3-share/)
+[ps3 share](https://stuffbymax.github.io/ps3-share/)
 
-[game Regions Codes](https://stuffbymax.me/Game-Region-Codes/)
+[game Regions Codes](https://stuffbymax.github.io/Game-Region-Codes/)
 
-[nano Cheat sheet](https://stuffbymax.me/nano-cheat-sheet/)
+[nano Cheat sheet](https://stuffbymax.github.io/nano-cheat-sheet/)
 
-[gamehub](https://stuffbymax.me/gamehub/)
+[gamehub](https://stuffbymax.github.io/gamehub/)
 
-[gamesave](https://stuffbymax.me/gamesave/ ) 
+[gamesave](https://stuffbymax.github.io/gamesave/ ) 
 
-[wiki-blogs](https://stuffbymax.me/wiki-blogs/)
+[wiki-blogs](https://stuffbymax.github.io/wiki-blogs/)
 
 [game Region Codes for Consoles](https://github.com/stuffbymax/Game-Region-Codes)
 
 [tic tac toe test AI test](https://github.com/stuffbymax/tic-tac-toe-test)
 
-[cv](https://stuffbymax.me/cv/)
+[cv](https://stuffbymax.github.io/cv/)

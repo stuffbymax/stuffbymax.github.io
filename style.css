@@ -1,0 +1,237 @@
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #e8e8e4;
+    --fg: #1a1a18;
+    --muted: #777770;
+    --border: #d0d0cb;
+    --accent: #1a1a18;
+    --link: #2a5cff;
+    --max: 680px;
+    --mono: 'DM Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding: 0 2rem;
+  }
+  .nav-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+  }
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--fg);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--fg); }
+
+  /* PAGES */
+  .page { display: none; padding: 0 2rem; }
+  .page.active { display: block; }
+
+  .content {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 4rem 0 6rem;
+  }
+
+  /* HOME */
+  .home-name {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+  }
+  .home-title {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+  .home-title em {
+    font-style: italic;
+    color: var(--muted);
+  }
+  .home-bio {
+    font-size: 15px;
+    color: var(--muted);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+  }
+  .home-links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 5rem; }
+  .home-links a {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    letter-spacing: 0.03em;
+    transition: border-color 0.15s;
+  }
+  .home-links a:hover { border-color: var(--fg); }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* FEATURED PROJECTS */
+  .featured-grid { display: grid; gap: 1px; border: 1px solid var(--border); }
+  .feat-card {
+    padding: 1.25rem 1.5rem;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: background 0.15s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .feat-card:hover { background: #ddddd8; }
+  .feat-card + .feat-card { border-top: 1px solid var(--border); }
+  .feat-card-left { flex: 1; }
+  .feat-card-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fg);
+    margin-bottom: 3px;
+  }
+  .feat-card-desc {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .feat-card-arrow {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  /* PROJECTS PAGE */
+  .filter-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-row input {
+    flex: 1;
+    min-width: 160px;
+    font-family: var(--mono);
+    font-size: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    transition: border-color 0.15s;
+  }
+  .filter-row input:focus { border-color: var(--fg); }
+  .filter-row input::placeholder { color: var(--muted); }
+  .filter-btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border);
+    background: none;
+    color: var(--muted);
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .filter-btn.active, .filter-btn:hover { border-color: var(--fg); color: var(--fg); }
+
+  .repo-list { display: grid; gap: 1px; border: 1px solid var(--border); }
+  .repo-item {
+    padding: 1rem 1.25rem;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: background 0.15s;
+  }
+  .repo-item:hover { background: #ddddd8; }
+  .repo-item + .repo-item { border-top: 1px solid var(--border); }
+  .repo-item-left { flex: 1; min-width: 0; }
+  .repo-name {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--link);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .repo-name:hover { text-decoration: underline; }
+  .repo-desc { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .repo-meta { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
+  .repo-lang {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .lang-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .repo-stars { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .repo-count { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-bottom: 1rem; }
+
+
+
+  /* MISC */
+  .empty { font-family: var(--mono); font-size: 12px; color: var(--muted); padding: 2rem 0; }
+  .loading-msg { font-family: var(--mono); font-size: 12px; color: var(--muted); padding: 1.5rem 0; }
+
+  @media (max-width: 540px) {
+    nav, .page, #post-view { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .home-title { font-size: 1.9rem; }
+  }
+  

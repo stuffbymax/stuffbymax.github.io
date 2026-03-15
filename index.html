@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>stuffbymax</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#" onclick="showPage('home')">stuffbymax</a>
+    <div class="nav-links">
+      <a href="#" class="active" id="nav-home" onclick="showPage('home')">home</a>
+      <a href="./projects.html" id="nav-projects" onclick="showPage('projects')">projects</a>
+
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <div class="content">
+    <p class="home-name">stuffbymax</p>
+    <h1 class="home-title">making things<br>on the <em>internet</em></h1>
+    <p class="home-bio">
+      Developer and game-maker. I build terminal tools, web projects, and small games. Most of my work lives on GitHub.
+    </p>
+
+    <div class="home-links">
+      <a href="https://github.com/stuffbymax" target="_blank">github ↗</a>
+      <a href="https://stuff-by-max.itch.io/" target="_blank">itch.io ↗</a>
+    </div>
+
+    <div class="section-label">my github stats</div>
+        <img src="https://github-readme-stats.vercel.app/api?username=stuffbymax&theme=default&show_icons=true&hide_border=true&count_private=true" alt="stuffbymax's GitHub Stats" />
+<br>
+    <div class="section-label">featured projects</div>
+    <div class="featured-grid">
+      <a class="feat-card" href="https://github.com/stuffbymax/bash-pac" target="_blank">
+        <div class="feat-card-left">
+          <div class="feat-card-name">bash-pac</div>
+          <div class="feat-card-desc">Pac-Man and Snake-inspired game in bash</div>
+        </div>
+        <span class="feat-card-arrow">↗</span>
+      </a>
+      <a class="feat-card" href="https://stuff-by-max.itch.io/" target="_blank">
+        <div class="feat-card-left">
+          <div class="feat-card-name">Zdislave: Welcome to Castle</div>
+          <div class="feat-card-desc">Doom and Wolfenstein-inspired FPS game</div>
+        </div>
+        <span class="feat-card-arrow">↗</span>
+      </a>
+      <a class="feat-card" href="https://stuffbymax.github.io/CheatsHub/" target="_blank">
+        <div class="feat-card-left">
+          <div class="feat-card-name">CheatsHub</div>
+          <div class="feat-card-desc">A website for game cheats and cheat sheets</div>
+        </div>
+        <span class="feat-card-arrow">↗</span>
+      </a>
+      <a class="feat-card" href="https://stuffbymax.me/space-rover/" target="_blank">
+        <div class="feat-card-left">
+          <div class="feat-card-name">space-rover</div>
+          <div class="feat-card-desc">Tracking inventions and space projects</div>
+        </div>
+        <span class="feat-card-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="page" id="page-projects">
+  <div class="content">
+    <div class="section-label">all projects</div>
+    <div class="filter-row">
+      <input type="text" id="proj-search" placeholder="search repos..." oninput="renderRepos()" />
+      <button class="filter-btn active" data-f="all" onclick="setFilter(this,'all')">all</button>
+      <button class="filter-btn" data-f="source" onclick="setFilter(this,'source')">source</button>
+      <button class="filter-btn" data-f="fork" onclick="setFilter(this,'fork')">forks</button>
+    </div>
+    <div class="repo-count" id="repo-count"></div>
+    <div class="repo-list" id="repo-list"><div class="loading-msg">loading...</div></div>
+  </div>
+</div>
+
+
+
+<script>
+const LANG_COLORS = {
+  JavaScript:'#f1e05a',TypeScript:'#3178c6',Python:'#3572A5',
+  Shell:'#89e051',HTML:'#e34c26',CSS:'#563d7c',C:'#555',
+  'C++':'#f34b7d',Rust:'#dea584',Go:'#00ADD8',Lua:'#000080',
+  GDScript:'#355570'
+};
+
+let allRepos = [], repoFilter = 'all';
+
+
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById('post-view').classList.remove('active');
+  document.getElementById('page-'+name).classList.add('active');
+  document.getElementById('nav-'+name).classList.add('active');
+  if (name === 'projects' && allRepos.length === 0) loadRepos();
+
+  return false;
+}
+
+function setFilter(btn, f) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  repoFilter = f;
+  renderRepos();
+}
+
+async function loadRepos() {
+  document.getElementById('repo-list').innerHTML = '<div class="loading-msg">loading from github...</div>';
+  try {
+    const r = await fetch('https://api.github.com/users/stuffbymax/repos?per_page=100&sort=updated');
+    allRepos = await r.json();
+    renderRepos();
+  } catch(e) {
+    document.getElementById('repo-list').innerHTML = '<div class="empty">could not load repos.</div>';
+  }
+}
+
+function renderRepos() {
+  const q = document.getElementById('proj-search').value.toLowerCase();
+  let list = allRepos.filter(r => {
+    if (repoFilter === 'source' && r.fork) return false;
+    if (repoFilter === 'fork' && !r.fork) return false;
+    if (q && !r.name.toLowerCase().includes(q) && !(r.description||'').toLowerCase().includes(q)) return false;
+    return true;
+  });
+  document.getElementById('repo-count').textContent = list.length + ' repos';
+  if (!list.length) { document.getElementById('repo-list').innerHTML = '<div class="empty">nothing found.</div>'; return; }
+  document.getElementById('repo-list').innerHTML = list.map(repo => {
+    const lang = repo.language || '';
+    const dot = lang ? `<span class="lang-dot" style="background:${LANG_COLORS[lang]||'#aaa'}"></span>` : '';
+    const stars = repo.stargazers_count > 0 ? `<span class="repo-stars">★ ${repo.stargazers_count}</span>` : '';
+    return `<div class="repo-item">
+      <div class="repo-item-left">
+        <a class="repo-name" href="${repo.html_url}" target="_blank">${repo.name}</a>
+        <div class="repo-desc">${repo.description || ''}</div>
+      </div>
+      <div class="repo-meta">
+        ${lang ? `<span class="repo-lang">${dot}${lang}</span>` : ''}
+        ${stars}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+
+</script>
+</body>
+</html>

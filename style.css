@@ -234,4 +234,20 @@
     nav, .page, #post-view { padding-left: 1.25rem; padding-right: 1.25rem; }
     .home-title { font-size: 1.9rem; }
   }
-  
+
+  .github-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 1.5rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+.image {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+
+}

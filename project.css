@@ -1,52 +1,222 @@
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --bg: #e8e8e4;
-    --fg: #1a1a18;
-    --muted: #777770;
-    --border: #d0d0cb;
-    --link: #2a5cff;
-    --max: 680px;
-    --mono: 'DM Mono', monospace;
-    --sans: 'DM Sans', sans-serif;
+:root {
+  --bg: #0e0e0e;
+  --surface: #151515;
+  --text: #eaeaea;
+  --muted: #9a9a9a;
+  --accent: #4da3ff;
+  --border: #262626;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+}
+
+/* NAVBAR */
+
+nav {
+  border-bottom: 1px solid var(--border);
+  background: rgba(14, 14, 14, 0.8);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+.nav-links .active {
+  color: var(--accent);
+}
+
+/* CONTENT */
+
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* FILTER ROW */
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#search {
+  flex: 1;
+  min-width: 200px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.5rem 0.6rem;
+  font-size: 0.85rem;
+  font-family: 'DM Mono', monospace;
+}
+
+#search::placeholder {
+  color: var(--muted);
+}
+
+.filter-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 0.4rem 0.7rem;
+  font-size: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.filter-btn.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* REPO COUNT */
+
+.repo-count {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+  font-family: 'DM Mono', monospace;
+}
+
+/* REPO LIST */
+
+.repo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* REPO CARD */
+
+.repo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.8rem;
+  transition: border 0.15s, transform 0.15s;
+}
+
+.repo-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.repo-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.repo-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.repo-title a:hover {
+  text-decoration: underline;
+}
+
+.repo-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.repo-meta {
+  font-size: 0.7rem;
+  font-family: 'DM Mono', monospace;
+  color: var(--muted);
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.repo-name {
+  color: lightblue;
+  text-decoration: none;
+}
+
+/* LANGUAGE TAG */
+
+.lang-tag {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid var(--border);
+  font-size: 0.65rem;
+}
+
+/* LOADING */
+
+.loading-msg {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-family: 'DM Mono', monospace;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .nav-inner {
+    padding: 0.8rem;
   }
-  body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-weight: 300; line-height: 1.7; min-height: 100vh; }
 
-  nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 100; padding: 0 2rem; }
-  .nav-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
-  .nav-logo { font-family: var(--mono); font-size: 13px; color: var(--fg); text-decoration: none; letter-spacing: 0.02em; }
-  .nav-links { display: flex; gap: 28px; }
-  .nav-links a { font-size: 13px; color: var(--muted); text-decoration: none; letter-spacing: 0.02em; transition: color 0.15s; }
-  .nav-links a:hover { color: var(--fg); }
-  .nav-links a.active { color: var(--fg); }
+  .content {
+    margin-top: 1.5rem;
+  }
 
-  .content { max-width: var(--max); margin: 0 auto; padding: 4rem 2rem 6rem; }
-
-  .section-label { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; }
-  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
-  .filter-row { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
-  .filter-row input { flex: 1; min-width: 160px; font-family: var(--mono); font-size: 12px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); padding: 7px 12px; outline: none; transition: border-color 0.15s; }
-  .filter-row input:focus { border-color: var(--fg); }
-  .filter-row input::placeholder { color: var(--muted); }
-  .filter-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; border: 1px solid var(--border); background: none; color: var(--muted); padding: 7px 14px; cursor: pointer; transition: all 0.15s; }
-  .filter-btn.active, .filter-btn:hover { border-color: var(--fg); color: var(--fg); }
-
-  .repo-count { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-bottom: 1rem; }
-
-  .repo-list { display: grid; gap: 1px; border: 1px solid var(--border); }
-  .repo-item { padding: 1rem 1.25rem; background: var(--bg); display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; transition: background 0.15s; }
-  .repo-item:hover { background: #ddddd8; }
-  .repo-item + .repo-item { border-top: 1px solid var(--border); }
-  .repo-item-left { flex: 1; min-width: 0; }
-  .repo-name { font-size: 13px; font-weight: 400; color: var(--link); text-decoration: none; display: block; margin-bottom: 2px; }
-  .repo-name:hover { text-decoration: underline; }
-  .repo-desc { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .repo-meta { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
-  .repo-lang { font-family: var(--mono); font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 4px; }
-  .lang-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-  .repo-stars { font-family: var(--mono); font-size: 11px; color: var(--muted); }
-
-  .empty { font-family: var(--mono); font-size: 12px; color: var(--muted); padding: 2rem 0; }
-  .loading-msg { font-family: var(--mono); font-size: 12px; color: var(--muted); padding: 1.5rem 0; }
-
-  @media (max-width: 540px) { nav, .content { padding-left: 1.25rem; padding-right: 1.25rem; } }
+  .repo-card {
+    padding: 0.7rem;
+  }
+}
